@@ -38,7 +38,7 @@ function calculatesFarePrice(start, destination) {
     if (start === 43 && destination === 44) {
         return 0;
     } else if (start === 34 && destination === 32) {
-        return 2.56;
+        return ((distance*264)-400)*0.02;
     } else if (start === 50 && destination === 58) {
         return 25;
     } else if (start === 34 && destination === 24) {
