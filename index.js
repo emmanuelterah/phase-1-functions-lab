@@ -2,31 +2,31 @@
 
 function distanceFromHqInBlocks (distance) {
     if (distance === 43) {
-        return 1;
+        return (43-42);
     } else if (distance >= 50) {
-        return 8;
+        return (50-42);
     } else if (distance < 42) {
-        return 8;
+        return (42-34);
     }
 }
 
 function distanceFromHqInFeet (feet) {
     if (feet === 43) {
-        return 264;
+        return (43-42)*264;
     } else if (feet = 50) {
-        return 2112;
+        return (50-42)*264;
     } else if (feet < 42) {
-        return 2112;
+        return (42-34)*264;
     }
 } 
 
 function distanceTravelledInFeet(distanceTravelledInFeet) {
     if (distanceTravelledInFeet >= 43 && distanceTravelledInFeet <= 48) {
-        return 1320;
+        return (48-43)*264;
     } else if (distanceTravelledInFeet >= 50 && distanceTravelledInFeet <= 60) {
-        return 2640;
+        return (60-50)*264;
     } else if (distanceTravelledInFeet >= 28 && distanceTravelledInFeet <= 34) {
-        return 1584;
+        return (34-28)*264;
     }
 }
 
@@ -45,3 +45,4 @@ function calculatesFarePrice(start, destination) {
         return "cannot travel that far"
     }  
 }
+  
